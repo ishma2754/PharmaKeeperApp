@@ -115,6 +115,8 @@ body{
 
 
 .name-input,
+.quantity-input,
+.description-input,
 .due-date-input,
 .filter-name-input,
 .filter-date-input{
@@ -126,19 +128,9 @@ body{
   border-radius: 60px;
   border: none;
   outline: none;
+  color: black;
 }
 
-.name-input,
-.description-input,
-.quantity-input {
-  color: black;
-  font-weight: bold;
-  font-size: 15px;
-  border-radius: 60px;
-  border: none;
-  outline: none;
-  padding-left: 10px;
-}
 
 
 .image-input{
@@ -151,7 +143,8 @@ body{
   padding-left: 10px;
 }
 
-.due-date-input{
+.due-date-input,
+.filter-date-input{
   color: red;
 }
 
@@ -160,17 +153,7 @@ body{
   padding: 10px;
 }
 
-.filter-name-input{
-  color: black;
-  font-weight: bold;
-  font-size: 15px;
-}
 
-.filter-date-input{
-  color: red;
-  font-weight: bold;
-  font-size: 15px;
-}
 
 .total-medicines{
   font-size: 20px;
@@ -181,7 +164,7 @@ body{
   font-weight: bold;
 }
 
-.description-input {
+/*.description-input {
   font-size: 15px;
   font-weight: bold;
   padding: 6px;
@@ -190,35 +173,12 @@ body{
   max-height: 28px;
   min-width: 200px;
   max-width: 250px;
-  
-  
 }
+*/
 
-.description-display
- {
-  font-size: 18px;
-  font-weight: bold;
-  padding: 6px;
-  min-height: auto; 
-  max-height: 150px; 
-  min-width: 200px; 
-  max-width: 250px; 
-  overflow-y: auto; /* Enable vertical scrolling */
-  overflow-x: hidden;
-  align-items: start;
-  pointer-events: none; /* Prevent mouse events */
-  user-select: none; /* Prevent text selection */
-  border: none;
-  
-}
 .description-display,
 .brand-name-display,
-.quantity-display{
-  color: black;
-  font-weight: bold;
-  font-size: 18px;
-}
-
+.quantity-display,
 .due-date-name-display{
   color: black;
   font-weight: bold;
@@ -255,6 +215,8 @@ body{
 }
 
 @media (max-width: 1000px) {
+
+
   .medicines-grid-display,
   .filter-medicines-show{
     grid-template-columns: repeat(2, 223px);
@@ -296,6 +258,7 @@ body{
     margin-left: 10px;
     margin-right: 10px;
   }
+
 
   .medicines-grid-display,
   .filter-medicines-show{
