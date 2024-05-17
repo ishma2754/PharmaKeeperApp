@@ -84,6 +84,7 @@ body{
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+  min-width: 230px;
   padding: 10px;
   gap: 10px;
 }
